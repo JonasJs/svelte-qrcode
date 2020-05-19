@@ -49,10 +49,7 @@ An example of how to use the library:
 
 ## Properties
 
-Component props:
-
-Simply create an instance of `QRious` and you've done most of the work. You can control many aspects of the QR code
-using the following fields on your instance:
+You can control many aspects of the QR code using the following props:
 
 | Prop           | Type    | Description                                        | Default        |
 | --------------- | ------- | -------------------------------------------------- | ------------- |
