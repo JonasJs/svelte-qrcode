@@ -19,8 +19,7 @@ yarn add svelte-qrcode
 
 ## Demo [Link](https://svelte-address-autocomplete.now.sh/)
 
-[[[!QrCode](https://cdn.dribbble.com/users/618115/screenshots/5774425/024-dailyui.png)
-
+[![!QrCode](https://cdn.dribbble.com/users/618115/screenshots/5774425/024-dailyui.png)
 Local demo:
 
 ```
