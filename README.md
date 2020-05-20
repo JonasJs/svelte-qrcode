@@ -15,9 +15,7 @@ npm i svelte-qrcode
 yarn add svelte-qrcode
 ```
 
-<em>Note: to use this library in sapper, install as devDependency. See the [link](https://github.com/sveltejs/sapper-template#using-external-components).</em>
-
-## Demo [Link](https://svelte-address-autocomplete.now.sh/)
+## Demo [Link](https://svelte-qrcode.now.sh/)
 
 ![image](https://user-images.githubusercontent.com/11879767/82413216-59eab480-9a4b-11ea-816c-019bc7f63a34.png)
 
