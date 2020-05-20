@@ -50,6 +50,7 @@
         </div>
       </div>
       <div class="sidebar">
+        <div class="info-group">
           <div class="items">
             <p>Name</p>
             <h3 class="name">RS 7593</h3>
@@ -58,6 +59,7 @@
             <p>Date</p>
             <h3>{new Date().toDateString()}</h3>
           </div>
+        </div>
         <QrCode class="qrcode" value="https://www.linkedin.com/in/jonas-alves-9163a5136/"/>
       </div>
     </div>
@@ -90,6 +92,7 @@
   .resume {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .fly {
     margin-top: 88px;
@@ -145,6 +148,9 @@
   .sidebar {
     padding: 0 60px;
   }
+  .sidebar .info-group {
+    display: block;
+  }
   .sidebar :global(.qrcode) {
     width: 200px;
   }
@@ -153,4 +159,25 @@
     
   }
 
+
+
+  @media (max-width: 720px) {
+    .resume {
+      flex-direction: column-reverse;
+    }
+    .fly {
+      margin-top: 48px;
+    }
+    .sidebar {
+      width: 100%;
+      margin-top: 40px;
+      display: flex;
+      padding: 0;
+      justify-content: space-between;
+    flex-wrap: wrap;
+    }
+    .sidebar .info-group {
+      
+    }
+  }
 </style>
