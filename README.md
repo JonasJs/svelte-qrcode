@@ -18,8 +18,9 @@ yarn add svelte-qrcode
 <em>Note: to use this library in sapper, install as devDependency. See the [link](https://github.com/sveltejs/sapper-template#using-external-components).</em>
 
 ## Demo [Link](https://svelte-address-autocomplete.now.sh/)
+![image](https://user-images.githubusercontent.com/11879767/82413216-59eab480-9a4b-11ea-816c-019bc7f63a34.png)
 
-[![!QrCode](https://cdn.dribbble.com/users/618115/screenshots/5774425/024-dailyui.png)
+
 Local demo:
 
 ```
@@ -55,7 +56,7 @@ You can control many aspects of the QR code using the following props:
 | background      | String  | Background color of the QR code                    | `"#FFFFFF"`   |
 | foreground      | String  | Foreground color of the QR code                    | `"#000000"`   |
 | level           | String  | Error correction level of the QR code (L, M, Q, H) | `"L"`         |
-| padding         | Number  | Padding for the QR code (pixels)                   | `null` (auto) |
+| padding         | Number  | Padding for the QR code (pixels)                   | `0`        |
 | size            | Number  | Size of the QR code (pixels)                       | `200`         |
 | value           | String  | Value encoded within the QR code                   | `""`          |
 
