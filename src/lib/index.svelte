@@ -4,10 +4,10 @@
   const QRcode = new QRious();
 
 
-  export let errorCorrection = "H";
+  export let errorCorrection = "L";
   export let background = "#fff";
   export let color = "#000";
-  export let size = "400";
+  export let size = "200";
   export let value = ""
   export let padding = 0;
 
