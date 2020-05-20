@@ -159,8 +159,6 @@
     
   }
 
-
-
   @media (max-width: 720px) {
     .resume {
       flex-direction: column-reverse;
@@ -174,10 +172,7 @@
       display: flex;
       padding: 0;
       justify-content: space-between;
-    flex-wrap: wrap;
-    }
-    .sidebar .info-group {
-      
+      flex-wrap: wrap;
     }
   }
 </style>

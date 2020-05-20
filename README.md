@@ -18,8 +18,8 @@ yarn add svelte-qrcode
 <em>Note: to use this library in sapper, install as devDependency. See the [link](https://github.com/sveltejs/sapper-template#using-external-components).</em>
 
 ## Demo [Link](https://svelte-address-autocomplete.now.sh/)
-![image](https://user-images.githubusercontent.com/11879767/82413216-59eab480-9a4b-11ea-816c-019bc7f63a34.png)
 
+![image](https://user-images.githubusercontent.com/11879767/82413216-59eab480-9a4b-11ea-816c-019bc7f63a34.png)
 
 Local demo:
 
@@ -33,17 +33,15 @@ yarn install && yarn start
 
 An example of how to use the library:
 
-**[Example Repl](https://svelte.dev/repl/)**
+**[Example Repl](https://svelte.dev/repl/e9cee0cfb11c4cd1847e366209e8c907?version=3.22.3)**
 
 ```js
-<script>
-  import QrCode from "svelte-qrcode"
-</script>
+<script>import QrCode from "svelte-qrcode"</script>
 ```
 
 ```html
 <div class="container">
-  <QrCode value="https://github.com/"/>
+  <QrCode value="https://github.com/" />
 </div>
 ```
 
@@ -51,15 +49,14 @@ An example of how to use the library:
 
 You can control many aspects of the QR code using the following props:
 
-| Prop           | Type    | Description                                        | Default        |
-| --------------- | ------- | -------------------------------------------------- | ------------- |
-| background      | String  | Background color of the QR code                    | `"#FFFFFF"`   |
-| foreground      | String  | Foreground color of the QR code                    | `"#000000"`   |
-| level           | String  | Error correction level of the QR code (L, M, Q, H) | `"L"`         |
-| padding         | Number  | Padding for the QR code (pixels)                   | `0`        |
-| size            | Number  | Size of the QR code (pixels)                       | `200`         |
-| value           | String  | Value encoded within the QR code                   | `""`          |
-
+| Prop       | Type   | Description                                        | Default     |
+| ---------- | ------ | -------------------------------------------------- | ----------- |
+| background | String | Background color of the QR code                    | `"#FFFFFF"` |
+| foreground | String | Foreground color of the QR code                    | `"#000000"` |
+| level      | String | Error correction level of the QR code (L, M, Q, H) | `"L"`       |
+| padding    | Number | Padding for the QR code (pixels)                   | `0`         |
+| size       | Number | Size of the QR code (pixels)                       | `200`       |
+| value      | String | Value encoded within the QR code                   | `""`        |
 
 ## NPM Statistics
 
