@@ -50,8 +50,8 @@ You can control many aspects of the QR code using the following props:
 | Prop       | Type   | Description                                        | Default     |
 | ---------- | ------ | -------------------------------------------------- | ----------- |
 | background | String | Background color of the QR code                    | `"#FFFFFF"` |
-| foreground | String | Foreground color of the QR code                    | `"#000000"` |
-| level      | String | Error correction level of the QR code (L, M, Q, H) | `"L"`       |
+| color | String | Foreground color of the QR code                    | `"#000000"` |
+| errorCorrection      | String | Error correction level of the QR code (L, M, Q, H) | `"L"`       |
 | padding    | Number | Padding for the QR code (pixels)                   | `0`         |
 | size       | Number | Size of the QR code (pixels)                       | `200`       |
 | value      | String | Value encoded within the QR code                   | `""`        |
