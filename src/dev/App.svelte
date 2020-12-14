@@ -1,11 +1,20 @@
 <script>
   import QrCode from '../lib/index.svelte';  
+
+  let i = 0;
+  let value = 'value #'+i;
+
+  function change() {
+    i++;
+    value = 'value #'+i;
+  }
+
 </script>
 
 
 <main class="container">
   <div class="content">
-    <h1>This is your <strong>Boarding pass</strong></h1>
+    <h1 on:click={change}>This is your <strong>Boarding pass</strong></h1>
     <div class="resume">
       <div class="fly">
         <div class="row">
@@ -60,7 +69,7 @@
             <h3>{new Date().toDateString()}</h3>
           </div>
         </div>
-        <QrCode class="qrcode" value="https://www.linkedin.com/in/jonas-alves-9163a5136/"/>
+        <QrCode class="qrcode" value={value}/>
       </div>
     </div>
   </div>

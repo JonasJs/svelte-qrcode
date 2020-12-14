@@ -13,16 +13,21 @@
 
   export let className = "qrcode"
 
-  QRcode.set({
-    background,
-    foreground: color,
-    level: errorCorrection,
-    padding,
-    size,
-    value,
-  });
-  
-  const image = QRcode.toDataURL('image/jpeg')
+  let image = null;
+
+  $: {
+
+    QRcode.set({
+      background,
+      foreground: color,
+      level: errorCorrection,
+      padding,
+      size,
+      value,
+    });
+
+    image = QRcode.toDataURL('image/jpeg')
+  }
 
 </script>
 
