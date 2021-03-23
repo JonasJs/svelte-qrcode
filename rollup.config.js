@@ -42,12 +42,6 @@ export default [
     output: { file: pkg.main, format: "umd", name: "addressAutocomplete" },
     plugins: [svelte(), resolve(), commonjs()]
   },
-  {
-    input: "src/lib/index.svelte",
-    output: { file: pkg.module, format: "es" },
-    external: ["svelte/internal", "qrious"],
-    plugins: [svelte(), commonjs()]
-  }
 ];
 
 function serve() {

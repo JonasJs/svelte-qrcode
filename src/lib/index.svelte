@@ -1,8 +1,8 @@
 <script>
   import { onMount } from 'svelte';
-  import QRious from 'qrious';
+  import QrCode from './qrcode';
 
-  const QRcode = new QRious();
+  const QRcode = new QrCode();
 
   export let errorCorrection = "L";
   export let background = "#fff";
@@ -36,7 +36,7 @@
   onMount(() => {
     generateQrCode();
   });
-  
+
 </script>
 
-<img src={image} alt={value} class={className} />
+<img src={image} alt={value} class={className}/>
