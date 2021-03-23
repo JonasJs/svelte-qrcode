@@ -1,6 +1,6 @@
 {
   "name": "svelte-qrcode",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "svelte": "src/lib/index.svelte",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
