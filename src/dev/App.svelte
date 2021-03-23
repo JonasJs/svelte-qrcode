@@ -2,7 +2,6 @@
   import QrCode from '../lib/index.svelte';  
 </script>
 
-
 <main class="container">
   <div class="content">
     <h1>This is your <strong>Boarding pass</strong></h1>
