@@ -1,6 +1,6 @@
 <script>
   import { onMount } from 'svelte';
-  import QrCode from './qrcode';
+  import { default as QrCode } from 'qrious';
 
   const QRcode = new QrCode();
 
