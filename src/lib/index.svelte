@@ -26,6 +26,10 @@
     
     image = QRcode.toDataURL('image/jpeg');
   }
+  
+  export function getImage() {
+      return image;
+  }
 
   $: {
     if(value) {
