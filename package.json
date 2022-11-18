@@ -15,7 +15,8 @@
 		"qrious",
 		"encode",
 		"canvas",
-		"image"
+		"image",
+		"svelte-kit"
   ],
 	"scripts": {
 		"dev": "vite dev",
