@@ -421,5 +421,5 @@ to-regex-range@^5.0.1:
     is-number "^7.0.0"
 
 ws@^7.4.3:
-  version "7.5.7"
-  resolved "https://registry.npmjs.org/ws/-/ws-7.5.7.tgz"
+  version "7.5.10"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.10.tgz#58b5c20dc281633f6c19113f39b349bd8bd558d9"
