@@ -1,9 +1,16 @@
-# Svelte QrCode
+<div align="center">
+
+# `svelte-qrcode`
+
 
 [![npm version](https://badge.fury.io/js/svelte-qrcode.svg)](https://www.npmjs.com/package/svelte-qrcode)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/JonasJs/svelte-qrcode/blob/master/LICENSE)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/JonasJs/svelte-qrcode.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JonasJs/svelte-qrcode/alerts/)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/JonasJs/svelte-qrcode.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JonasJs/svelte-qrcode/context:javascript)
+
+QR Code generator for Svelte & SvelteKit
+</div>
+
 
 Generate from QR Code with style, logo, and [Error Level Rate](https://blog.qrstuff.com/2011/12/14/qr-code-error-correction) that serve to avoid errors if the `QR Code` is damaged.
 
