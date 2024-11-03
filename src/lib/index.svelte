@@ -1,8 +1,6 @@
 <script>
   import { onMount } from 'svelte';
-  import { default as QrCode } from 'qrious';
-
-  const QRcode = new QrCode();
+  import { default as QRious } from 'qrious';
 
   export let errorCorrection = "L";
   export let background = "#fff";
@@ -15,7 +13,8 @@
   let image = '';
 
   function generateQrCode() {
-    QRcode.set({
+    const QRCode = new QRious();
+    QRCode.set({
       background,
       foreground: color,
       level: errorCorrection,
@@ -23,24 +22,24 @@
       size,
       value,
     });
-    
-    image = QRcode.toDataURL('image/jpeg');
-  }
-  
-  export function getImage() {
-      return image;
+
+    image = QRCode.toDataURL('image/jpeg');
   }
 
+  // (!) Plugin svelte: $: has no effect outside of the top-level
   $: {
-    if(value) {
+    if (typeof document != 'undefined' && value) {
       generateQrCode();
     }
+  }
+
+  export function getImage() {
+    return image;
   }
 
   onMount(() => {
     generateQrCode();
   });
-
 </script>
 
-<img src={image} alt={value} class={className}/>
+<img src={image} alt={value} class={className} />
