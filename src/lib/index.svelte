@@ -2,8 +2,6 @@
   import { onMount } from 'svelte';
   import { default as QrCode } from 'qrious';
 
-  const QRcode = new QrCode();
-
   export let errorCorrection = "L";
   export let background = "#fff";
   export let color = "#000";
@@ -13,6 +11,7 @@
   export let className = "qrcode";
 
   let image = '';
+  let QRcode;
 
   function generateQrCode() {
     QRcode.set({
@@ -28,18 +27,21 @@
   }
   
   export function getImage() {
-      return image;
-  }
-
-  $: {
-    if(value) {
-      generateQrCode();
-    }
+    return image;
   }
 
   onMount(() => {
-    generateQrCode();
+    QRcode = new QrCode();
+    if(value) {
+      generateQrCode();
+    }
   });
+
+  $: {
+    if(value && QRcode) {
+      generateQrCode();
+    }
+  }
 
 </script>
 
