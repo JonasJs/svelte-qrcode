@@ -5,14 +5,13 @@
 
 [![npm version](https://badge.fury.io/js/svelte-qrcode.svg)](https://www.npmjs.com/package/svelte-qrcode)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/JonasJs/svelte-qrcode/blob/master/LICENSE)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/JonasJs/svelte-qrcode.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JonasJs/svelte-qrcode/alerts/)
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/JonasJs/svelte-qrcode.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JonasJs/svelte-qrcode/context:javascript)
 
-QR Code generator for Svelte & SvelteKit
+
+QR Code generator for <b>Svelte</b> & <b>SvelteKit</b> with style, logo, and [Error Level Rate](https://blog.qrstuff.com/2011/12/14/qr-code-error-correction) that serve to avoid errors if the `QR Code` is damaged.
+
 </div>
 
 
-Generate from QR Code with style, logo, and [Error Level Rate](https://blog.qrstuff.com/2011/12/14/qr-code-error-correction) that serve to avoid errors if the `QR Code` is damaged.
 
 ## Installation
 
@@ -38,7 +37,7 @@ yarn install && yarn start
 
 An example of how to use the library:
 
-**[Example Repl](https://svelte.dev/repl/e9cee0cfb11c4cd1847e366209e8c907?version=3.22.3)**
+**[Example Repl](https://svelte.dev/repl/e9cee0cfb11c4cd1847e366209e8c907?version=5.1.9)**
 
 ```js
 <script>import QrCode from "svelte-qrcode"</script>
